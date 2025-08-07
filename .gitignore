@@ -1,0 +1,6 @@
+__pycache__/
+downloads/
+playlists/
+*.json
+*.log
+ffmpeg/
