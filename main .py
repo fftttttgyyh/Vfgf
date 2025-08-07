@@ -19,15 +19,7 @@ import yt_dlp
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
-# >>> АВТОМАТИЧЕСКАЯ УСТАНОВКА FFMPEG НА REPLIT <<<
-if not os.path.exists("ffmpeg"):
-    os.system("curl -L https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz -o ffmpeg.tar.xz")
-    os.system("tar -xf ffmpeg.tar.xz")
-    for fname in os.listdir("."):
-        if fname.startswith("ffmpeg") and "static" in fname:
-            os.rename(fname, "ffmpeg")
-    os.remove("ffmpeg.tar.xz")
-# <<< КОНЕЦ УСТАНОВКИ FFMPEG <<<
+
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "7924842430:AAFgb0yipgDfOUHkuIo_Y8KVRzJyf7ooAaw")
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "AIzaSyDnKcF9MSTwmbNhsV4jkdXJU6XJ9M_Otl0")
